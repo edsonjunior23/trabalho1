@@ -3,19 +3,16 @@ public class EquacaoSegundoGrau {
     private double b;
     private double c;
 
-    // Construtor para inicializar os coeficientes da equação
     public EquacaoSegundoGrau(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    // Método para calcular o discriminante (Delta)
     private double calcularDelta() {
         return (b * b) - (4 * a * c);
     }
 
-    // Método para calcular as raízes
     public void calcularRaizes() {
         double delta = calcularDelta();
 
@@ -36,7 +33,7 @@ public class EquacaoSegundoGrau {
         }
     }
 
-    // Método principal para teste
+    // Método para teste
     public static void main(String[] args) {
         EquacaoSegundoGrau equacao1 = new EquacaoSegundoGrau(1, -3, 2); // a=1, b=-3, c=2
         equacao1.calcularRaizes();

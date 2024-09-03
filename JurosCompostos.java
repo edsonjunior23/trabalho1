@@ -1,11 +1,10 @@
 public class JurosCompostos {
 
-    // Método para calcular o montante final usando a fórmula dos juros compostos
     public static double calcularMontante(double capitalInicial, double taxaJuros, int numeroPeriodos) {
         return capitalInicial * Math.pow(1 + taxaJuros, numeroPeriodos);
     }
 
-    // Método principal para teste
+    // Método para teste
     public static void main(String[] args) {
         double capitalInicial = 1000.0; // Capital inicial
         double taxaJuros = 0.05; // Taxa de juros por período (5%)
